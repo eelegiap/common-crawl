@@ -22,3 +22,4 @@ Aggregating the articles that contained at least one keyword from each category,
 I also attempted to use the News API (formerly Google News) to extract articles. My efforts were only half successful because I needed to buy a paid subscription to look at articles before 9/29/20 and could only make 100 requests in 24 hours.
 
 ### Conclusion
+Perhaps I could have figured out the WARC file reading on a different computer, because I'm afraid the dependency problems might be specific to my machine. I acknowledge that I should have used the Common Crawl, but I decided to pivot in a different direction (towards a similar goal) once I saw no options left for reading the WARC files. Nonetheless, I am incredibly enthusiastic about Trust Lab and strongly hope that we can talk more about whether I'd be a good fit for the team. Thank you! -- Paige 
