@@ -1,6 +1,6 @@
 # common-crawl
 ## Extract pages related to COVID-19's economic impact using Common Crawl's archives
-##### Extracted urls and months found in ``URLS.txt``
+##### Extracted urls and months can be found in csv ``URLS.csv`` with headers ``url,month``.
 
 ### My process
 #### 1. Get familiar with Common Crawl
