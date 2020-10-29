@@ -13,4 +13,12 @@ Next, I tried using the ``warc`` library to read in my WARC files. I faced major
 I spent 2-3 hours looking for libraries that handle WARC files and unsuccessfully testing work-around solutions for the problems I was facing with the ``warc`` and ``warcio`` libraries. The solution (I believe), either involves a problem with my own dependencies, or with unresolved issues in the ``warc`` and ``warcio`` libraries due to updates in dependent modules. My disastrous experience with WARC can be found in the ``failed-attempt-at-Common-Crawl`` folder.
 
 #### 3. Assessing non-WARC options
-I figured that it was better to find some URLs rather than none, given the challenges I was having with the WARC files. I began looking around at different news companies and seeing if they offered developer APIs to access their article archives. I believed this would be a representative sample of the URL's I'd find in the Common Crawl, since news articles most likely make up a significant portion of the Common Crawl pages that contain mentions of COVID and the economy. I chose to start with the NYTimes, since they are a reputable newspaper with a high output volume of articles. In 
+I figured that it was better to find some URLs rather than none, given the challenges I was having with the WARC files. I began looking around at different news companies and seeing if they offered developer APIs to access their article archives. I believed this would be a representative sample of the URL's I'd find in the Common Crawl, since news articles most likely make up a significant portion of the Common Crawl pages that contain mentions of COVID and the economy. I chose to start with the NYTimes, since they are a reputable newspaper with a high output volume of articles. In the end, I did not use the ``news-please`` library, because I I could find all of the relevant information inside the NYTimes API.
+
+I used a subsection of the NYTimes archives which included all articles from January 1st, 2020 to today. Each article contained metadata, including the URL, a portion of the text, headlines, etc. I did keyword searches over the text content of each article. I compiled economy-related keywords (in ``economy_keywords.txt``) and covid-related keywords (in ``covid_keywords.txt``). 
+
+Aggregating the articles that contained at least one keyword from each category, I found 2570 covid/econ articles in total from the NYTimes. 
+
+I also attempted to use the News API (formerly Google News) to extract articles. My efforts were only half successful because I needed to buy a paid subscription to look at articles before 9/29/20 and could only make 100 requests in 24 hours.
+
+### Conclusion
