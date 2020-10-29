@@ -20,5 +20,7 @@ I used a subsection of the NYTimes archives which included all articles from Jan
 
 I also attempted to use the News API (formerly Google News) to extract articles. My efforts were only half successful because I needed to buy a paid subscription to extract articles before 9/29/20 and could only make 100 requests in 24 hours.
 
+My attempts using the NYTimes API and the News API can be found in the ``nytimes-and-google`` folder.
+
 ### Conclusion
 I believe I could have figured out the WARC file reading on a different computer, because I'm afraid the dependency problems might be specific to my machine. I acknowledge that I should have used the Common Crawl, but I decided to pivot in a different direction (towards a similar goal) once I saw no options left for reading the WARC files. Regardless, I am incredibly enthusiastic about Trust Lab and sincerely hope we can discuss more about whether I'd be a good fit for the team. Thank you! -- Paige 
